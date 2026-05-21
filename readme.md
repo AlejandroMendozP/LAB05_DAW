@@ -5,6 +5,7 @@ Este proyecto consiste en el diseño, estructuración e implementación del back
 El entorno está diseñado para realizar pruebas de rendimiento, consultas relacionales avanzadas (Joins anidados) y filtros complejos mediante **Postman**.
 
 ---
+# URL: https://youtu.be/qwTrNnZkZH8?feature=shared
 
 ## 🛠️ Arquitectura y Tecnologías
 * **Motor de Base de Datos:** PostgreSQL (Alojado en Supabase)
@@ -50,7 +51,14 @@ INSERT INTO categorias (nombre, descripcion) VALUES
   ('Periféricos de Alta Gama', 'Teclados magnéticos y hardware especializado.'),
   ('Componentes de PC', 'Procesadores y tarjetas gráficas.');
 
+
+
 INSERT INTO productos (nombre, descripcion, precio, stock, categoria_id, usuario_id) VALUES 
   ('Teclado Magnético Pro', 'Ideal para ritmo y gaming competitivo.', 650.00, 15, (SELECT id FROM categorias WHERE nombre = 'Periféricos de Alta Gama' LIMIT 1), (SELECT id FROM usuarios ORDER BY random() LIMIT 1)),
   ('Procesador Ryzen 7 7700X', '8 núcleos y 16 hilos.', 1200.00, 8, (SELECT id FROM categorias WHERE nombre = 'Componentes de PC' LIMIT 1), (SELECT id FROM usuarios ORDER BY random() LIMIT 1));
 URL del video: https://youtu.be/qwTrNnZkZH8?feature=shared
+
+
+
+
+
